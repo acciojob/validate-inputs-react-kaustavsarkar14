@@ -44,7 +44,7 @@ const App = () => {
 
     // Validate Mobile
     if (formData.mobile.length !== 10) {
-      setErrors((prevErrors) => ({ ...prevErrors, mobile: 'Mobile number should be 10 characters long' }));
+      setErrors((prevErrors) => ({ ...prevErrors, mobile: 'Mobile number should not be more than 10 characters' }));
       valid = false;
     } else {
       setErrors((prevErrors) => ({ ...prevErrors, mobile: '' }));
